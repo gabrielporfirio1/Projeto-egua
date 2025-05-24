@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #06202B;
+    --cor-secundaria: #7AE2CF;
+    --cor-terciaria: #077A7D;
+    --cor-complementar: #F5EEDD;
+
+    --fonte-titulo: 'cyberpunk', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: 'cyberpunk';
+    src: url('../assets/fontes/Cybrpnuk2.ttf');
+}
+
+body {
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    text-align: center;
+    margin: 6% 6% 0 6%;
+    font-size: 24px;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-titulo);
+    border: solid #7AE2CF 3px;
+    box-shadow: 0px 0px 15px #077A7D;
+}
