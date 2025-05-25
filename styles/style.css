@@ -4,10 +4,10 @@
     --cor-primaria: #06202B;
     --cor-secundaria: #7AE2CF;
     --cor-terciaria: #077A7D;
-    --cor-complementar: #F5EEDD;
+    --cor-complementar: #00ffd5;
 
     --fonte-titulo: 'cyberpunk', sans-serif;
-    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-subtitulo: 'Montserrat', sans-serif;
 }
 
 @font-face {
@@ -18,14 +18,100 @@
 body {
     background-color: var(--cor-primaria);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .cabecalho {
-    text-align: center;
     margin: 6% 6% 0 6%;
     font-size: 24px;
     color: var(--cor-secundaria);
     font-family: var(--fonte-titulo);
-    border: solid #7AE2CF 3px;
-    box-shadow: 0px 0px 15px #077A7D;
+    border: solid var(--cor-secundaria) 3px;
+    box-shadow: 0px 0px 15px var(--cor-terciaria);
+}
+
+.conteudo__aviso__titulo {
+    margin: 15% 0 7% 0;
+    font-size: 30px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-secundaria);
+}
+
+.conteudo__aviso__texto {
+    margin: 0 7% 15% 7%;
+    font-family: var(--fonte-subtitulo);
+    color: var(--cor-terciaria);
+    font-weight: bold;
+}
+
+.conteudo__aviso__link {
+    text-decoration: none;
+    padding: 10px 30px;
+    width: 600px;
+    border: solid var(--cor-terciaria) 2px;
+    color: var(--cor-secundaria);
+    box-shadow: 0px 0px 5px var(--cor-terciaria);
+    background-color: var(--cor-complementar);
+}
+
+.conteudo__pergunta {
+    margin: 15% 5% 0 5%;
+}
+
+.conteudo__pergunta__subtitulo {
+    font-family: var(--fonte-subtitulo);
+    color: var(--cor-terciaria);
+    margin-bottom: 10%;
+}
+
+.conteudo__pergunta__opcoes__opcao {
+    width: 190px;
+    height: 190px;
+    margin: 3%;
+    border-radius: 5px;
+    border: solid var(--cor-secundaria) 2px;
+}
+
+.resposta-errada__texto {
+    margin: 40% 0 15% 0;
+    font-family: var(--fonte-subtitulo);
+    color: var(--cor-terciaria);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.resposta-errada__link {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-size: 25px;
+    border: solid var(--cor-secundaria) 2px;
+    padding: 3% 7%;
+    border-radius: 5px 0px 5px 0px;
+    box-shadow: 0 0 3px var(--cor-terciaria);
+    background-color: var(--cor-complementar);
+}
+
+.conteudo-paginaAniversario__imagem {
+    margin: 20% 0 30% 0; 
+    width: 350px;
+    height: 350px;
+    border: solid var(--cor-complementar) 2px;
+    border-radius: 5px 0;
+    box-shadow: 1px 1px 2px var(--cor-secundaria);
+}
+
+.conteudo-paginaAniversario__texto {
+    color: var(--cor-terciaria);
+    margin: 0 5% 15% 5%;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.conteudo-paginaAniversario__texto2 {
+    color: var(--cor-terciaria);
+    margin: 0 5% 10% 5%;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
 }
